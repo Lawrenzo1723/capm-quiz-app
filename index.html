@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>CAPM Quiz App</h1>
+    <label for="category">Choose a Category:</label>
+    <select id="category">
+        <option value="terms">Project Management Terms</option>
+        <option value="principles">Project Management Principles</option>
+        <option value="domains">Project Management Domains</option>
+    </select>
+    <button onclick="loadQuestion()">Start Quiz</button>
+    
+    <button onclick="reviewIncorrect()">Review Incorrect Answers</button>
+    
+    <div id="quiz-container" style="display: none;">
+        <h3 id="question"></h3>
+        <div id="options"></div>
+        <button onclick="submitAnswer()">Submit Answer</button>
+        <button onclick="loadQuestion()" id="next-button" style="display: none;">Next Question</button>
+    </div>
+    
+    <div id="result"></div>
+</div>
